@@ -736,21 +736,17 @@ p {
     color: var(--white);
 }
 
-/* ===== Features CSS ===== */
+/* ===== "stuff" CSS ===== */
 .ud-stuff {
   padding-top: 0px;
   padding-bottom: 0px;
-  border: var(--primary-color);
-  border-bottom-style:dashed;
-  border-width: 1px;
+  box-shadow: 10px 10px 5px --primary-color;
 }
 @media (max-width: 767px) {
   .ud-features {
     padding-top: 0px;
     padding-bottom: 0px;
-    border-width: 10px;
-    border: 10px;
-    border-bottom: var(--primary-color);
+    box-shadow: 10px 10px 5px --primary-color;
   }
 }
 

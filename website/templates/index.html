@@ -44,17 +44,16 @@
     <link rel="stylesheet" href=" {% static 'website/css/animate.css' %} " />
     <link rel="stylesheet" href=" {% static 'website/css/lineicons.css' %} " />
     <link rel="stylesheet" href=" {% static 'website/css/ud-styles.css' %} " />
-    <link rel="stylesheet" href=" {% static 'website/css/caroousel.css' %} " />
 
 </head>
 <body>
     <!-- ====== Header Start ====== -->
-    <header class="ud-header">
+    <header class="ud-header" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="#home">
                             <img src=" {% static 'website/images/logo/fulllogo-white.png' %} " alt="Logo" />
                         </a>
                         <button class="navbar-toggler">
@@ -66,23 +65,23 @@
                         <div class="navbar-collapse">
                             <ul id="nav" class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href=" {% static '#home' %} ">Home</a>
+                                    <a class="ud-menu-scroll" href="#home">Home</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href=" {% static '#about' %} ">Services</a>
+                                    <a class="ud-menu-scroll" href="#about">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href=" {% static '#pricing' %} ">Fee Schedule</a>
+                                    <a class="ud-menu-scroll" href="#pricing">Fee Schedule</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href=" {% static '#team' %} ">Testimonials</a>
+                                    <a class="ud-menu-scroll" href="#team">Testimonials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href=" {% static '#contact' %} ">Place Order</a>
+                                    <a class="ud-menu-scroll" href="#contact">Place Order</a>
                                 </li>
                                 <li class="nav-item nav-item-has-children">
-                                    <a href=" {% static 'javascript:void(0)' %} "> Contact </a>
+                                    <a href="javascript:void(0)"> Contact </a>
                                     <ul class="ud-submenu">
                                         <li class="ud-submenu-item">
                                             <a href=" {% static 'about.html' %} " class="ud-submenu-link">
@@ -126,7 +125,7 @@
                             <!--<a href=" {% static 'login.html' %} " class="ud-main-btn ud-login-btn">
                                 702-592-3283
                             </a>-->
-                            <a class="ud-main-btn ud-white-btn" href=" {% static 'javascript:void(0)' %} ">
+                            <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
                                 Contact Us
                             </a>
                         </div>
@@ -168,9 +167,9 @@
         </div>
     </section>
     <!-- ====== Hero End ====== -->
-    <section id="stuff" class="ud-stuff" style="padding-bottom:30px;">
-        <div class="container">
-            <div class="row g-0 justify-content-center">
+    <section id="stuff" class="" style="padding-bottom:30px; box-shadow: 0px -40px 75px #662e90;">
+        <div class="container" class="under-shadow">
+            <div class="row g-0 justify-content-center" >
                 <div class="col-lg-3 col-md-6 col-xs-10">
                     <div class="ud-single-pricing first-item wow fadeInUp"
                         data-wow-delay=".15s">
@@ -185,7 +184,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-1 ud-pricing-vert-divider">
+                <div class="col-lg-1 ud-pricing-vert-divider" style="margin-bottom: -20px;">
                     <img src=" {% static 'website/images/vert-divider.png' %} " alt="divide" />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10">
@@ -202,7 +201,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-1 ud-pricing-vert-divider">
+                <div class="col-lg-1 ud-pricing-vert-divider" style="margin-bottom: -20px;">
                     <img src=" {% static 'website/images/vert-divider.png' %} " alt="divide" />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10">
@@ -244,7 +243,7 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
                         <div class="ud-feature-icon">
-                            <i class="lni lni-gift"></i>
+                            <i class="lni lni-files"></i>
                         </div>
                         <div class="ud-feature-content">
                             <h3 class="ud-feature-title">Process Serving</h3>
@@ -257,7 +256,7 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
                         <div class="ud-feature-icon">
-                            <i class="lni lni-move"></i>
+                            <i class="lni lni-magnifier"></i>
                         </div>
                         <div class="ud-feature-content">
                             <h3 class="ud-feature-title">Skip Tracing</h3>
@@ -270,7 +269,7 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
                         <div class="ud-feature-icon">
-                            <i class="lni lni-layout"></i>
+                            <i class="lni lni-notepad"></i>
                         </div>
                         <div class="ud-feature-content">
                             <h3 class="ud-feature-title">Due Diligence</h3>
@@ -283,7 +282,7 @@
                 <div class="col-xl-3 col-lg-3 col-sm-6">
                     <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
                         <div class="ud-feature-icon">
-                            <i class="lni lni-layers"></i>
+                            <i class="lni lni-database"></i>
                         </div>
                         <div class="ud-feature-content">
                             <h3 class="ud-feature-title">Public Records Searches</h3>
@@ -695,16 +694,16 @@
                             <h5 class="ud-widget-title">About Us</h5>
                             <ul class="ud-widget-links">
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">Home</a>
+                                    <a href="javascript:void(0)">Home</a>
                                 </li>
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">Features</a>
+                                    <a href="javascript:void(0)">Features</a>
                                 </li>
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">About</a>
+                                    <a href="javascript:void(0)">About</a>
                                 </li>
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">Testimonial</a>
+                                    <a href="javascript:void(0)">Testimonial</a>
                                 </li>
                             </ul>
                         </div>
@@ -714,16 +713,16 @@
                             <h5 class="ud-widget-title">Features</h5>
                             <ul class="ud-widget-links">
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">How it works</a>
+                                    <a href="javascript:void(0)">How it works</a>
                                 </li>
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">Privacy policy</a>
+                                    <a href="javascript:void(0)">Privacy policy</a>
                                 </li>
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">Terms of service</a>
+                                    <a href="javascript:void(0)">Terms of service</a>
                                 </li>
                                 <li>
-                                    <a href=" {% static 'javascript:void(0)' %} ">Refund policy</a>
+                                    <a href="javascript:void(0)">Refund policy</a>
                                 </li>
                             </ul>
                         </div>
@@ -785,13 +784,13 @@
                     <div class="col-md-8">
                         <ul class="ud-footer-bottom-left">
                             <li>
-                                <a href=" {% static 'javascript:void(0)' %} ">Privacy policy</a>
+                                <a href="javascript:void(0)">Privacy policy</a>
                             </li>
                             <li>
-                                <a href=" {% static 'javascript:void(0)' %} ">Support policy</a>
+                                <a href="javascript:void(0)">Support policy</a>
                             </li>
                             <li>
-                                <a href=" {% static 'javascript:void(0)' %} ">Terms of service</a>
+                                <a href="javascript:void(0)">Terms of service</a>
                             </li>
                         </ul>
                     </div>
@@ -806,7 +805,7 @@
     </footer>
     <!-- ====== Footer End ====== -->
     <!-- ====== Back To Top Start ====== -->
-    <a href=" {% static 'javascript:void(0)' %} " class="back-to-top">
+    <a href=" javascript:void(0) " class="back-to-top">
         <i class="lni lni-chevron-up"> </i>
     </a>
     <!-- ====== Back To Top End ====== -->
