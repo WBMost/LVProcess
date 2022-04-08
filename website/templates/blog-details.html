@@ -1,0 +1,204 @@
+<!-- =========
+
+	Template Name: Play
+	Author: UIdeck
+	Author URI: https://uideck.com/
+	Support: https://uideck.com/support/
+	Version: 1.1
+
+========== -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play | Open source Project by UIdeck</title>
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href=" {% static 'assets/images/favicon.svg' %} "
+      type="image/svg"
+    />
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href=" {% static 'assets/css/bootstrap.min.css' %} " />
+    <link rel="stylesheet" href=" {% static 'assets/css/animate.css' %} " />
+    <link rel="stylesheet" href=" {% static 'assets/css/lineicons.css' %} " />
+    <link rel="stylesheet" href=" {% static 'assets/css/ud-styles.css' %} " />
+  </head>
+  <body>
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href=" {% static 'index.html' %} ">
+                <img src=" {% static 'assets/images/logo/logo.svg' %} " alt="Logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href=" {% static '#home' %} ">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href=" {% static '#about' %} ">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href=" {% static '#pricing' %} ">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href=" {% static '#team' %} ">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href=" {% static '#contact' %} ">Contact</a>
+                  </li>
+                  <li class="nav-item nav-item-has-children">
+                    <a href=" {% static 'javascript:void(0)' %} "> Pages </a>
+                    <ul class="ud-submenu">
+                      <li class="ud-submenu-item">
+                        <a href=" {% static 'about.html' %} " class="ud-submenu-link">
+                          About Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href=" {% static 'pricing.html' %} " class="ud-submenu-link">
+                          Pricing Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href=" {% static 'contact.html' %} " class="ud-submenu-link">
+                          Contact Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href=" {% static 'blog.html' %} " class="ud-submenu-link">
+                          Blog Grid Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href=" {% static 'blog-details.html' %} " class="ud-submenu-link">
+                          Blog Details Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href=" {% static 'login.html' %} " class="ud-submenu-link">
+                          Sign In Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href=" {% static '404.html' %} " class="ud-submenu-link">404 Page</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a href=" {% static 'login.html' %} " class="ud-main-btn ud-login-btn">
+                  Sign In
+                </a>
+                <a class="ud-main-btn ud-white-btn" href=" {% static 'javascript:void(0)' %} ">
+                  Sign Up
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Banner Start ====== -->
+    <section class="ud-page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-banner-content">
+              <h1>Blog Page</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Banner End ====== -->
+
+    <!-- ====== Blog Details Start ====== -->
+    <section class="ud-blog-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-blog-details-image">
+              <img
+                src=" {% static 'assets/images/blog/blog-details-01.jpg' %} "
+                alt="blog details"
+              />
+              <div class="ud-blog-overlay">
+                <div class="ud-blog-overlay-content">
+                  <div class="ud-blog-author">
+                    <img src=" {% static 'assets/images/blog/author-01.png' %} " alt="author" />
+                    <span>
+                      By <a href=" {% static 'javascript:void(0)' %} "> Samuyl Joshi </a>
+                    </span>
+                  </div>
+
+                  <div class="ud-blog-meta">
+                    <p class="date">
+                      <i class="lni lni-calendar"></i> <span>12 Jan 2024</span>
+                    </p>
+                    <p class="comment">
+                      <i class="lni lni-comments"></i> <span>50</span>
+                    </p>
+                    <p class="view">
+                      <i class="lni lni-eye"></i> <span>35</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="ud-blog-details-content">
+              <h2 class="ud-blog-details-title">
+                Facing a challenge is kind of a turn-on for an easy rider
+              </h2>
+              <p class="ud-blog-details-para">
+                There’s a time and place for everything… including asking for
+                reviews. For instance: you should not asking for a review on
+                your checkout page. The sole purpose of this page is to guide
+                your customer to complete their purchase, and this means that
+                the page should be as minimalist and pared-down possible. You
+                don’t want to have any unnecessary elements or Call To Actions.
+              </p>
+              <p class="ud-blog-details-para">
+                There’s a time and place for everything… including asking for
+                reviews. For instance: you should not asking for a review on
+                your checkout page. The sole purpose of this page is to guide
+                your customer to complete their purchase, and this means that
+                the page should be as minimalist and pared-down possible. You
+                don’t want to have any unnecessary elements or Call To Actions.
+              </p>
+              <h3 class="ud-blog-details-subtitle">Sea no quidam vulputate</h3>
+              <p class="ud-blog-details-para">
+                At quo cetero fastidii. Usu ex ornatus corpora sententiae,
+                vocibus deleniti ut nec. Ut enim eripuit eligendi est, in
+                iracundia signiferumque quo. Sed virtute suavitate suscipiantur
+                ea, dolor this can eloquentiam ei pro. Suas adversarium
+                interpretaris eu sit, eum viris impedit ne. Erant appareat
+                corrumpit ei vel.
+              </p>
+
+              <div class="ud-blog-quote">
+                <i class="lni lni-quotation"></i>
+                <p>
