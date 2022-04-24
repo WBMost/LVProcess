@@ -80,7 +80,7 @@
                                 <li class="nav-item">
                                     <a class="ud-menu-scroll" href="#contact">Place Order</a>
                                 </li>
-                                <li class="nav-item nav-item-has-children">
+                                <!--<li class="nav-item nav-item-has-children">
                                     <a href="contact.html"> Contact </a>
                                     <ul class="ud-submenu">
                                         <li class="ud-submenu-item">
@@ -118,6 +118,7 @@
                                         </li>
                                     </ul>
                                 </li>
+                                -->
                             </ul>
                         </div>
 
@@ -125,7 +126,7 @@
                             <!--<a href=" {% static 'login.html' %} " class="ud-main-btn ud-login-btn">
                                 702-592-3283
                             </a>-->
-                            <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                            <a class="ud-main-btn ud-white-btn" href="contact.html">
                                 Contact Us
                             </a>
                         </div>
@@ -344,7 +345,9 @@
                 </div>
             </div>
             <div class="row slideshow-container"style="height: 517px;align-self: center;">
-                <a class="prev col-lg-1" style="align-self: center;text-align: center;" href="#testimonials" onclick="plusSlides(-1)">❮</a>
+                <div class="prev col-lg-1" style="align-self: center;text-align: center;" href="#testimonials" onclick="plusSlides(-1)">
+                    <a class="ud-main-btn ud-white-btn noselect" style="min-width: 30px; height:100px; padding: 35px 0;"> < </a>
+                </div>
 
                 <div class="mySlides col-lg-10" style="font-size: large;line-height: 40px; padding: 1%;align-self: center;">
                     <div class="numbertext">
@@ -394,13 +397,14 @@
                     </div>
                     <h4 style="padding:3%">-Afshin T.</h4>
                 </div>
-                
-                
-                <a class="next col-lg-1" style="align-self: center;text-align: center;" href="#testimonials" onclick="plusSlides(1)">❯</a>
+
+                <div class="next col-lg-1" style="align-self: center;text-align: center;" href="#testimonials" onclick="plusSlides(1)">
+                    <a class="ud-main-btn ud-white-btn noselect" style="min-width: 30px; height:100px; padding: 35px 0;"> > </a>
+                </div>
                 
             </div>
             <br>
-
+            <!--
             <p style="padding:2%">
                 Reviews from individuals:
             </p>
@@ -419,6 +423,7 @@
                     <h3>Submit your own review!</h3>
                 </div>
             </div>
+            -->
         </div>
     </section>
     <!-- ====== Testimonials End ====== -->
@@ -575,8 +580,8 @@
                         <div class="ud-contact-title">
                             <span>CONTACT US</span>
                             <h2>
-                                Let’s talk about <br />
-                                Love to hear from you!
+                                Have questions? <br />
+                                We'd love to hear from you!
                             </h2>
                         </div>
                         <div class="ud-contact-info-wrapper">
@@ -605,38 +610,23 @@
                 <div class="col-xl-4 col-lg-5">
                     <div class="ud-contact-form-wrapper wow fadeInUp"
                          data-wow-delay=".2s">
-                        <h3 class="ud-contact-form-title">Send us a Message</h3>
-                        <form class="ud-contact-form">
-                            <div class="ud-form-group">
-                                <label for="fullName">Full Name*</label>
-                                <input type="text"
-                                       name="fullName"
-                                       placeholder="Guy Individual" />
-                            </div>
-                            <div class="ud-form-group">
-                                <label for="email">Email*</label>
-                                <input type="email"
-                                       name="email"
-                                       placeholder="example@yourmail.com" />
-                            </div>
-                            <div class="ud-form-group">
-                                <label for="phone">Phone*</label>
-                                <input type="text"
-                                       name="phone"
-                                       placeholder="+1 702 555 5555" />
-                            </div>
-                            <div class="ud-form-group">
-                                <label for="message">Message*</label>
-                                <textarea name="message"
-                                          rows="1"
-                                          placeholder="type your message here"></textarea>
-                            </div>
-                            <div class="ud-form-group mb-0">
-                                <button type="submit" class="ud-main-btn">
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
+                        <h3 class="ud-contact-form-title">Want to reach us from our webpage?</h3>
+                        <div class="ud-form-group mb-0">
+                            <p>
+                                Head over to our specific 'Contact Us' page to quickly and easily get in contact with us.
+                                From there, you can type in some information about yourself and your message to us 
+                                to make it easier for us to get in contact with you so we can get back to you as fast as
+                                possible. 
+
+                            </p><br>
+                            <ul style="align-self: center; text-align: center;" class="ud-white-btn">
+                                <li>
+                                    <a href="contact.html" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-link-btn">
+                                        Contact Us <i class="lni"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
