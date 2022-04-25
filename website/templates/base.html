@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{% url 'index' %}">
                             <img src=" {% static 'website/images/logo/fulllogo-white.png' %} " alt="Logo" />
                         </a>
                         <button class="navbar-toggler">
@@ -56,7 +56,7 @@
                         <div class="navbar-collapse">
                             <ul id="nav" class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href="index.html">Home</a>
+                                    <a class="ud-menu-scroll" href="{% url 'index' %}">Home</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -69,7 +69,7 @@
                                     <a class="ud-menu-scroll" href="#team">Testimonials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="ud-menu-scroll" href="#contact">Place Order</a>
+                                    <a class="ud-menu-scroll" href="{% url 'contact' %}">Place Order</a>
                                 </li>
                                 <!--<li class="nav-item nav-item-has-children">
                                     <a href="contact.html"> Contact </a>
@@ -117,7 +117,7 @@
                             <!--<a href=" {% static 'login.html' %} " class="ud-main-btn ud-login-btn">
                                 702-592-3283
                             </a>-->
-                            <a class="ud-main-btn ud-white-btn" href="contact.html">
+                            <a class="ud-main-btn ud-white-btn" href="{% url 'contact' %}">
                                 Contact Us
                             </a>
                         </div>
@@ -304,7 +304,7 @@
         // ==== for menu scroll
         const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
-        pageLink.forEach((elem) => {
+        /*pageLink.forEach((elem) => {
             elem.addEventListener("click", (e) => {
                 e.preventDefault();
                 document.querySelector(elem.getAttribute("href")).scrollIntoView({
@@ -312,7 +312,7 @@
                     offsetTop: 1 - 60,
                 });
         });
-          });
+          });*/
 
         // section menu active
         function onScroll(event) {
