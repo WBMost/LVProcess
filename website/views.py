@@ -16,6 +16,9 @@ def error404(request):
 def order(request):
     return render(request, 'order.html', {})
 
+def pricing(request):
+    return render(request, 'pricing.html', {})
+
 def testimonials(request):
     test = {}
     firstName = None

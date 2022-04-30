@@ -19,6 +19,7 @@
     --white: #ffffff;
 }
 
+
 body {
   font-family: var(--font);
   font-weight: normal;
@@ -68,6 +69,8 @@ span,
 a {
   display: inline-block;
 }
+
+
 
 audio,
 canvas,
@@ -2725,6 +2728,12 @@ p {
   width: 100%;
 }
 
+a.one{
+  color:var(--body-color);
+}
+a.one:hover{
+  background: var(--body-color);
+}
 @media (max-width: 767px) {
   .ud-404-links a {
     margin: 5px 10px;

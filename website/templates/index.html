@@ -34,60 +34,78 @@
         </div>
     </section>
     <!-- ====== Hero End ====== -->
-    <section id="stuff" class="" style="padding-bottom:30px; box-shadow: 0px -40px 75px #662e90;">
+    <section id="stuff" class="" style="padding-bottom:30px; box-shadow: 0px -55px 75px #662e90;">
         <div class="container" class="under-shadow">
             <div class="row g-0 justify-content-center" >
+                <div style="height: 10px;"></div>
                 <div class="col-lg-3 col-md-6 col-xs-10">
-                    <div class="ud-single-pricing first-item wow fadeInUp"
-                        data-wow-delay=".15s">
-                        <div class="ud-pricing-header">
-                            <h4><b>SERVICES</b></h4>
+                    <a style="color: #637381;" onmouseover="heroHighlightOn('services')" onmouseleave="heroHighlightOff('services')" href="{% url 'pricing' %}">
+                        <div style="margin-top: 10px; margin-bottom: -10px; border-radius:20px" id="services" 
+                            class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                            <div class="ud-pricing-header">
+                                <h4 ><b>SERVICES</b></h4>
+                            </div>
+                            <div class="ud-pricing-divider noselect">
+                                <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
+                            </div>
+                            <ul>
+                                <li>Learn more about our services provided at LVPI.</li>
+                            </ul>
                         </div>
-                        <div class="ud-pricing-divider">
-                            <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
-                        </div>
-                        <ul>
-                            <li>Learn more about our services provided at LVPI.</li>
-                        </ul>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-lg-1 ud-pricing-vert-divider" style="margin-bottom: -20px;">
+                <div class="col-lg-1 ud-pricing-vert-divider noselect" style=" margin-bottom: -20px;">
                     <img src=" {% static 'website/images/vert-divider.png' %} " alt="divide" />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10">
-                    <div class="ud-single-pricing first-item wow fadeInUp"
-                        data-wow-delay=".15s">
-                        <div class="ud-pricing-header">
-                            <h4><b>FEE SCHEDULE</b></h4>
+                    <a style="color: #637381;" onmouseover="heroHighlightOn('feeSchedule')" onmouseleave="heroHighlightOff('feeSchedule')" href="{% url 'pricing' %}">
+                        <div style="margin-top: 10px; margin-bottom: -10px; border-radius:20px" id="feeSchedule" 
+                            class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                            <div class="ud-pricing-header">
+                                <h4><b>FEE SCHEDULE</b></h4>
+                            </div>
+                            <div class="ud-pricing-divider noselect">
+                                <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
+                            </div>
+                            <ul>
+                                <li>View our fee schedule for the pricing of our services.</li>
+                            </ul>
                         </div>
-                        <div class="ud-pricing-divider">
-                            <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
-                        </div>
-                        <ul>
-                            <li>View our fee schedule for the pricing of our services.</li>
-                        </ul>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-lg-1 ud-pricing-vert-divider" style="margin-bottom: -20px;">
+                <div class="col-lg-1 ud-pricing-vert-divider noselect" style=" margin-bottom: -20px;">
                     <img src=" {% static 'website/images/vert-divider.png' %} " alt="divide" />
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10">
-                    <div class="ud-single-pricing first-item wow fadeInUp"
-                        data-wow-delay=".15s">
-                        <div class="ud-pricing-header">
-                            <h4><b>CONTACT US</b></h4>
+                    <a style="color: #637381;" onmouseover="heroHighlightOn('contactUs')" onmouseleave="heroHighlightOff('contactUs')" href="{% url 'contact' %}">
+                        <div style="margin-top: 10px; margin-bottom: -10px; border-radius:20px" id="contactUs" 
+                            class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                            <div class="ud-pricing-header">
+                                <h4><b>CONTACT US</b></h4>
+                            </div>
+                            <div class="ud-pricing-divider noselect">
+                                <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
+                            </div>
+                            <ul>
+                                <li>Call 702.592.3283 or email info@lvprocess.com</li>
+                            </ul>
                         </div>
-                        <div class="ud-pricing-divider">
-                            <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
-                        </div>
-                        <ul>
-                            <li>Call 702.592.3283 or email info@lvprocess.com</li>
-                        </ul>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        function heroHighlightOn(str) {
+            document.getElementById(str).style.background = "#ECF0F1";
+        }
+
+        function heroHighlightOff(str) {
+            document.getElementById(str).style.background = "none";
+        }
+    </script>
+
     <!-- ====== Features Start ====== -->
     <section id="features" class="ud-features">
         <div class="container">
@@ -175,7 +193,7 @@
     <!-- ====== About Start ====== -->
     <section id="about" class="ud-about">
         <div class="container">
-            <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+            <div class="ud-about-wrapper wow fadeInUp" style="border-radius: 10px" data-wow-delay=".2s">
                 <div class="ud-about-content-wrapper">
                     <div class="ud-about-content">
                         <span class="tag">About Us</span>
