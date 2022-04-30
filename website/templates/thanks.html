@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Form Submission{% endblock %}
+
+{% block content %}
+<!-- ====== Banner Start ====== -->
+<section class="ud-page-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-banner-content">
+            <h1>Thank You!</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Banner End ====== -->
+
+<!-- ====== Testimonials Start ====== -->
+<section id="about" class="ud-about">
+    <div class="container">
+        
+        <div class="col-lg-12">
+            <div class="ud-contact-form-wrapper wow fadeInUp"
+                data-wow-delay=".2s">
+                <center>
+                    <h2>
+                        We greatly appreciate your time, {{name}}!
+                    </h2><br><br><br><br><br>
+                    <P>
+                        We are grateful you have spent the time to reach out to us. Thank you for filling out a 
+                        {{type}} form.
+                        {% if type == 'testimonial' %}
+                        Make sure to check back soon on the Testimonials page to see if we have added
+                        your testimonial!
+                        {% else %}
+                        We will promptly look into what you have contacted us about and will hopefully reach out 
+                        to you soon!
+                        {% endif %}
+                    </P>                
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Testimonials End ====== -->
+
+{% endblock %}

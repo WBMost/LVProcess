@@ -95,12 +95,6 @@
         <div class="col-lg-12">
             <div class="ud-contact-form-wrapper wow fadeInUp"
                 data-wow-delay=".2s">
-                {% if name != None %}
-                <center>
-                    <h3>Thank you, {{name}}!</h3><br><br><br><br>
-                    <p>We have recieved your testimonial and will get back to you shortly and possibly update our site!</p><br><br><br>
-                </center>
-                {% else %}
                 <h3 class="ud-contact-form-title">Want to tell us about your experience with us?</h3>
                 <form action="{% url 'testimonials' %}" method="post" class="ud-contact-form row">
                 {% csrf_token %}
@@ -120,9 +114,9 @@
                     </div>
                     <div class="ud-form-group" style="max-width: 33%;">
                         <label for="phone">Phone*</label>
-                        <input type="text"
+                        <input type="tel"
                             name="phone"
-                            placeholder="+1 702 555 5555" 
+                            placeholder="702 555 5555" 
                             required/>
                     </div>
                     <div class="ud-form-group" style="max-width: 50%;">
@@ -152,7 +146,6 @@
                     </div>
                     </center>
                 </form>
-                {% endif %}
             </div>
         </div>
     </div>
