@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import django_heroku
+import dj_database_url
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -48,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'lvprocess.urls'
@@ -122,6 +125,9 @@ STATICFILES_DIRS = [
     BASE_DIR/"static",
 ]
 
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressManifestStaticFilesStorage'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -136,3 +142,5 @@ EMAIL_HOST_USER = 'webbuilderboy@gmail.com'
 EMAIL_HOST_PASSWORD = '6wnvH8CgLUt6.r_'
 EMAIL_USE_TLS = True
 #EMAIL_USE_SSL = False
+
+django_heroku.settings(locals())

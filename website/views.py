@@ -19,6 +19,9 @@ def order(request):
 def pricing(request):
     return render(request, 'pricing.html', {})
 
+def services(request):
+    return render(request, 'services.html', {})
+
 def testimonials(request):
     test = {}
     firstName = None
