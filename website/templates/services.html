@@ -18,220 +18,173 @@
     </section>
     <!-- ====== Banner End ====== -->
 
+    <section id="stuff" class="" style="padding-bottom:30px; box-shadow: 0px -55px 75px #662e90;">
+      <div class="container" class="under-shadow">
+          <div class="row g-0 justify-content-center" >
+              <div style="height: 10px;"></div>
+              <div class="col-lg-3 col-md-6 col-xs-10">
+                  <a style="color: #637381;" onmouseover="heroHighlightOn('services')" onmouseleave="heroHighlightOff('services')" href="#PBS">
+                      <div style="margin-top: 10px; margin-bottom: -10px; border-radius:20px" id="services" 
+                          class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                          <div class="ud-pricing-header">
+                              <h4 ><b>Public Record Searches</b></h4>
+                          </div>
+                          <div class="ud-pricing-divider noselect">
+                              <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
+                          </div>
+                          <ul>
+                              <li>Learn more about our public record searches.</li>
+                          </ul>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-1 ud-pricing-vert-divider noselect" style=" margin-bottom: -20px;">
+                  <img src=" {% static 'website/images/vert-divider.png' %} " alt="divide" />
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-10">
+                  <a style="color: #637381;" onmouseover="heroHighlightOn('feeSchedule')" onmouseleave="heroHighlightOff('feeSchedule')" href="#PS">
+                      <div style="margin-top: 10px; margin-bottom: -10px; border-radius:20px" id="feeSchedule" 
+                          class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                          <div class="ud-pricing-header">
+                              <h4><b>Process Serving</b></h4>
+                          </div>
+                          <div class="ud-pricing-divider noselect">
+                              <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
+                          </div>
+                          <ul>
+                              <li>Learn more about process serving.</li>
+                          </ul>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-1 ud-pricing-vert-divider noselect" style=" margin-bottom: -20px;">
+                  <img src=" {% static 'website/images/vert-divider.png' %} " alt="divide" />
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-10">
+                  <a style="color: #637381;" onmouseover="heroHighlightOn('contactUs')" onmouseleave="heroHighlightOff('contactUs')" href="#ST">
+                      <div style="margin-top: 10px; margin-bottom: -10px; border-radius:20px" id="contactUs" 
+                          class="ud-single-pricing first-item wow fadeInUp" data-wow-delay=".15s">
+                          <div class="ud-pricing-header">
+                              <h4><b>Skip Trace</b></h4>
+                          </div>
+                          <div class="ud-pricing-divider noselect">
+                              <img src=" {% static 'website/images/divider.png' %} " alt="divide" />
+                          </div>
+                          <ul>
+                              <li>Learn more aboutskip tracing.</li>
+                          </ul>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script>
+      function heroHighlightOn(str) {
+          document.getElementById(str).style.background = "#ECF0F1";
+      }
+
+      function heroHighlightOff(str) {
+          document.getElementById(str).style.background = "none";
+      }
+  </script>
+
     <!-- ====== About Start ====== -->
-    <section id="about" class="ud-about">
+    <section id="PBS" class="ud-about">
       <div class="container">
         <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
           <div class="ud-about-content-wrapper">
             <div class="ud-about-content">
-              <span class="tag">About Us</span>
-              <h2>Brilliant Toolkit to Build Nextgen Website Faster.</h2>
-              <p>
-                The main ‘thrust’ is to focus on educating attendees on how to
-                best protect highly vulnerable business applications with
-                interactive panel discussions and roundtables led by subject
-                matter experts.
-              </p>
-
-              <p>
-                The main ‘thrust’ is to focus on educating attendees on how to
-                best protect highly vulnerable business applications with
-                interactive panel.
-              </p>
-              <a href=" {% static 'javascript:void(0)' %} " class="ud-main-btn">Learn More</a>
+              <span class="tag">Public Record Searches</span>
+              <h2>Our List of Public Record Searches We Offer:</h2>
+              <ul>
+                <li>&#8226;Voters Registration</li>
+                <li>&#8226;Property Ownership</li>
+                <li>&#8226;Marriages</li>
+                <li>&#8226;Divorce</li>
+                <li>&#8226;Civil / Criminal Records</li>
+                <li>&#8226;City / County Business Licenses</li>
+                <li>&#8226;DBA / Fictitious Business Name</li>
+                <li>&#8226;Nevada Corporations</li>
+              </ul>
             </div>
           </div>
-          <div class="ud-about-image">
-            <img src=" {% static 'assets/images/about/about-image.svg' %} " alt="about-image" />
+          <div class="ud-about-image" style="padding-top: 20px;">
+            <img src=" {% static 'website/images/services/magnifying.png' %} " style="object-fit:cover; max-height: 465px;" alt="about-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="PS" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Process Serving</span>
+              <h2>What is Service of Process?</h2>
+              
+                <p>
+                  Service of process is the legal procedure to give notice to a person of a court or administrative body
+                  against them. The legal documents served to them could be a summons, notice, petition, subpoena, or any
+                  other paperwork legally required to be copied and given to the other party in the case. This enables
+                  that person to respond to the proceeding before the court, body, or other tribunal. Although documents
+                  are often served to one or more individuals, corporations and governments also need to be served if
+                  they are being sued. There are many legal requirements involved with process of service and they vary
+                  by state.
+                <br>
+                  We serve all documents: Civil, Federal, Family, Subpoenas, Small Claims, Protective Orders, ect...
+                </p>
+              <ul>
+                <li><b>Included With Service:</b></li>
+                <li>&#8226;No added fee for mileage</li>
+                <li>&#8226;Evenings and Weekends</li>
+                <li>&#8226;No added fees for notary or affidavits of due diligence</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ud-about-image" style="padding-top: 100px;">
+            <img src=" {% static 'website/images/services/notice.png' %} " style="max-height: 465px;" alt="about-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ST" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">Skip Trace</span>
+              <h2>What is Skip Tracing?</h2>
+              <p>
+                Skip trace is a service that is necessary if contact cannot be made in person or by phone with an 
+                individual. A skip trace must be done to locate new information on a person, such as, a new address 
+                or phone number. Our skip traces include:
+              </p>
+              <ul>
+                <li>&#8226;Database Search</li>
+                <li>&#8226;Tax Assessors</li>
+                <li>&#8226;Voters Registration</li>
+                <li>&#8226;Phone Records</li>
+                <li>&#8226;Jail</li>
+                <li>&#8226;And More…</li>
+              </ul>
+              <br><br>
+              <p>
+                Locating a person who doesn’t want to be found or has relocated is often a complicated process. If 
+                through all of our efforts a person cannot be located, an Affidavit of Due Diligence will be 
+                provided to your office with all the details and findings.
+              </p>
+            </div>
+          </div>
+          <div class="ud-about-image" style="padding-top: 100px;">
+            <img src=" {% static 'website/images/services/skip.png' %} " style="max-height: 465px;" alt="about-image" />
           </div>
         </div>
       </div>
     </section>
     <!-- ====== About End ====== -->
-
-    <!-- ====== Team Start ====== -->
-    <section id="team" class="ud-team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-section-title mx-auto text-center">
-              <span>Our Team</span>
-              <h2>Meet The Team</h2>
-              <p>
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src=" {% static 'assets/images/team/team-01.png' %} " alt="team" />
-                </div>
-
-                <img
-                  src=" {% static 'assets/images/team/dotted-shape.svg' %} "
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src=" {% static 'assets/images/team/shape-2.svg' %} "
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Adveen Desuza</h5>
-                <h6>UI Designer</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src=" {% static 'assets/images/team/team-02.png' %} " alt="team" />
-                </div>
-
-                <img
-                  src=" {% static 'assets/images/team/dotted-shape.svg' %} "
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src=" {% static 'assets/images/team/shape-2.svg' %} "
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Jezmin uniya</h5>
-                <h6>Product Designer</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src=" {% static 'assets/images/team/team-03.png' %} " alt="team" />
-                </div>
-
-                <img
-                  src=" {% static 'assets/images/team/dotted-shape.svg' %} "
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src=" {% static 'assets/images/team/shape-2.svg' %} "
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Andrieo Gloree</h5>
-                <h6>App Developer</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
-              <div class="ud-team-image-wrapper">
-                <div class="ud-team-image">
-                  <img src=" {% static 'assets/images/team/team-04.png' %} " alt="team" />
-                </div>
-
-                <img
-                  src=" {% static 'assets/images/team/dotted-shape.svg' %} "
-                  alt="shape"
-                  class="shape shape-1"
-                />
-                <img
-                  src=" {% static 'assets/images/team/shape-2.svg' %} "
-                  alt="shape"
-                  class="shape shape-2"
-                />
-              </div>
-              <div class="ud-team-info">
-                <h5>Jackie Sanders</h5>
-                <h6>Content Writer</h6>
-              </div>
-              <ul class="ud-team-socials">
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-instagram-filled"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Team End ====== -->
+    
     {% endblock %}

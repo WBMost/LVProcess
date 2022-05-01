@@ -25,6 +25,7 @@
             <div class="ud-contact-form-wrapper wow fadeInUp"
                 data-wow-delay=".2s">
                 <center>
+                    {% if name != 'tUJirE/s3-9JMCL' %}
                     <h2>
                         We greatly appreciate your time, {{name}}!
                     </h2><br><br><br><br><br>
@@ -39,6 +40,14 @@
                         to you soon!
                         {% endif %}
                     </P>                
+                    {% else %}
+                    <h2>
+                        We are grateful you chose us!
+                    </h2><br><br><br><br><br>
+                    <P>
+                        We thank you for picking us for your needs. We will file this soon and will reach out if neccisary.
+                    </P>  
+                    {% endif %}
                 </center>
             </div>
         </div>

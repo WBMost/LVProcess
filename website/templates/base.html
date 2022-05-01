@@ -40,7 +40,6 @@
                                 <li class="nav-item">
                                     <a class="ud-menu-scroll" href="{% url 'home' %}">Home</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="ud-menu-scroll" href="{% url 'services' %}">Services</a>
                                 </li>
@@ -50,48 +49,16 @@
                                 <li class="nav-item">
                                     <a class="ud-menu-scroll" href="{% url 'testimonials' %}">Testimonials</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item nav-item-has-children">
                                     <a class="ud-menu-scroll" href="{% url 'order' %}">Place Order</a>
-                                </li>
-                                <!--<li class="nav-item nav-item-has-children">
-                                    <a href="contact.html"> Contact </a>
                                     <ul class="ud-submenu">
                                         <li class="ud-submenu-item">
-                                            <a href=" {% static 'about.html' %} " class="ud-submenu-link">
-                                                About Page
+                                            <a href=" {% url 'payment' %} " class="ud-submenu-link">
+                                                Make A Payment
                                             </a>
-                                        </li>
-                                        <li class="ud-submenu-item">
-                                            <a href=" {% static 'pricing.html' %} " class="ud-submenu-link">
-                                                Pricing Page
-                                            </a>
-                                        </li>
-                                        <li class="ud-submenu-item">
-                                            <a href=" {% static 'contact.html' %} " class="ud-submenu-link">
-                                                Contact Page
-                                            </a>
-                                        </li>
-                                        <li class="ud-submenu-item">
-                                            <a href=" {% static 'blog.html' %} " class="ud-submenu-link">
-                                                Blog Grid Page
-                                            </a>
-                                        </li>
-                                        <li class="ud-submenu-item">
-                                            <a href=" {% static 'blog-details.html' %} " class="ud-submenu-link">
-                                                Blog Details Page
-                                            </a>
-                                        </li>
-                                        <li class="ud-submenu-item">
-                                            <a href=" {% static 'login.html' %} " class="ud-submenu-link">
-                                                Sign In Page
-                                            </a>
-                                        </li>
-                                        <li class="ud-submenu-item">
-                                            <a href="404.html" class="ud-submenu-link">404 Page</a>
                                         </li>
                                     </ul>
                                 </li>
-                                -->
                             </ul>
                         </div>
 
@@ -128,7 +95,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="ud-widget">
-                            <a href=" {% static 'index.html' %} " class="ud-footer-logo">
+                            <a href=" {% url 'home' %} " class="ud-footer-logo">
                                 <img src=" {% static 'website/images/logo/logo.png' %} " alt="logo" />
                             </a>
                             <p class="ud-widget-desc">
@@ -164,13 +131,13 @@
                             <h5 class="ud-widget-title">About Us</h5>
                             <ul class="ud-widget-links">
                                 <li>
-                                    <a href="javascript:void(0)"><a href="index.html">Home</a></a>
+                                    <a href="javascript:void(0)"><a href="{% url 'home' %}">Home</a></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Features</a>
+                                    <a href="javascript:void(0)"><a href="{% url 'services' %}">Services</a></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">About</a>
+                                    <a href="javascript:void(0)"><a href="{% url 'about' %}">About</a></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">Testimonial</a>
@@ -251,15 +218,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <ul class="ud-footer-bottom-left">
-                            <li>
-                                <a href="javascript:void(0)">Privacy policy</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">Support policy</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">Terms of service</a>
-                            </li>
+                            
                         </ul>
                     </div>
                     <div class="col-md-4">

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Make a Payment{% endblock %}
+
+{% block content %}
+<!-- ====== Banner Start ====== -->
+<section class="ud-page-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="ud-banner-content">
+            <h1>Make a Payment</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Banner End ====== -->
+
+<!-- ====== Testimonials Start ====== -->
+<section id="about" class="ud-about">
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="ud-contact-form-wrapper wow fadeInUp"
+                data-wow-delay=".2s">
+                <h3 class="ud-contact-form-title">Ready to Make a Payment?</h3>
+                <p>
+                    Looking to pay an Invoice? Pre-paying for our services? You’re in the right place, 
+                    please complete the fields below and follow the simple steps.
+                    <br>
+                    <br>
+                    &#8226; Please use your firms invoice number, or if you only have the SUBMISSION ID, this may be used as well.<br>
+                    &#8226; The Description field can be completed with the name of the intended recipient.
+                </p>
+                <br>
+                <br>
+                <form action="{% url 'payment' %}" method="post" class="ud-contact-form row">
+                {% csrf_token %}
+                    <div class="ud-form-group" style="max-width: 33%;">
+                        <label for="invoice">Invoice #*</label>
+                        <input type="text"
+                            name="invoice"
+                            required/>
+                    </div>
+                    <div class="ud-form-group" style="max-width: 33%;">
+                        <label for="amount">Payment Amount #*</label>
+                        <input type="text"
+                            name="amount"
+                            placeholder="$75.00" 
+                            required/>
+                    </div>
+                    <div class="ud-form-group" style="max-width: 33%;">
+                        <label for="email">Email*</label>
+                        <input type="email"
+                            name="email"
+                            placeholder="example@yourmail.com" 
+                            required/>
+                    </div>
+                    <div class="ud-form-group" style="max-width: 100%;">
+                        <label for="desc">Description</label>
+                        <textarea name="desc"
+                                placeholder="Routine process serve in Carson City" 
+                                rows="1"></textarea>
+                    </div>
+                    <center>
+                    <div class="ud-form-group mb-0">
+                        <button type="submit" class="ud-main-btn">
+                            Submit
+                        </button>
+                    </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Testimonials End ====== -->
+
+{% endblock %}

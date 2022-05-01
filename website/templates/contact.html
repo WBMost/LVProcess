@@ -38,7 +38,7 @@
                               </div>
                               <div class="ud-info-meta">
                                   <h5>Our Location</h5>
-                                  <p>10829 Whipple Crest Ave, Las Vegas, NV 89166</p>
+                                  <p>4909 hillside view court Las Vegas, NV 89149</p>
                               </div>
                           </div>
                           <div class="ud-single-info">
@@ -60,37 +60,45 @@
                       <h3 class="ud-contact-form-title">Send us a Message</h3>
                       <form action="{% url 'contact' %}" method="post" class="ud-contact-form">
                         {% csrf_token %}
-                          <div class="ud-form-group">
-                              <label for="fullName">Full Name*</label>
-                              <input type="text"
-                                     name="fullName"
-                                     placeholder="Guy Individual" />
-                          </div>
-                          <div class="ud-form-group">
-                              <label for="email">Email*</label>
-                              <input type="email"
-                                     name="email"
-                                     placeholder="example@yourmail.com" />
-                          </div>
-                          <div class="ud-form-group">
-                              <label for="phone">Phone*</label>
-                              <input type="text"
-                                     name="phone"
-                                     placeholder="+1 702 555 5555" />
-                          </div>
-                          <div class="ud-form-group">
-                              <label for="message">Message*</label>
-                              <textarea name="message"
-                                        rows="1"
-                                        placeholder="type your message here"></textarea>
-                          </div>
-                          <div class="ud-form-group mb-0">
-                              <button type="submit" class="ud-main-btn">
-                                  Send Message
-                              </button>
-                          </div>
+                        <div class="ud-form-group">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text"
+                                name="fullName"
+                                placeholder="Guy Individual" 
+                                required/>
+                        </div>
+                        <div class="ud-form-group">
+                            <label for="email">Email*</label>
+                            <input type="email"
+                                name="email"
+                                placeholder="example@yourmail.com" 
+                                required/>
+                        </div>
+                        <div class="ud-form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel"
+                                name="phone"
+                                placeholder="702 555 5555"/>
+                        </div>
+                        <div class="ud-form-group">
+                            <label for="business">Firm Name</label>
+                            <input type="text"
+                                name="business"
+                                placeholder='Can be left blank' />
+                        </div>
+                        <div class="ud-form-group">
+                            <label for="message">Message*</label>
+                            <textarea name="message"
+                                    rows="3"
+                                    placeholder="type your message here"
+                                    required></textarea>
+                        </div>
+                        <div class="ud-form-group mb-0">
+                            <button type="submit" class="ud-main-btn">
+                                Send Message
+                            </button>
+                        </div>
                       </form>
-                      {% endif %}
                   </div>
               </div>
           </div>
